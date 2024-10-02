@@ -12,6 +12,8 @@
     }
 </script>
 
-<style lang="">
-    
+<style>
+    body {
+        background-color: grey;
+    }
 </style>

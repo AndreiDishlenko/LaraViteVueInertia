@@ -4,14 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    @vite(['style.css'])
+    @vite(['resources/css/styles.css'])
   </head>
   <body>
 
     About
     <div id="app"></div>    
     
-    @vite(['resources/js/about.js'])
+    @vite(['resources/js/main.js'])
 
   </body>
 </html>
