@@ -6,6 +6,7 @@ import { createSSRApp, h } from 'vue'
 createServer(page =>
   createInertiaApp({
     page,
+    // title: title => `${title} - My App`,
     render: renderToString,
     resolve: name => {
       const pages = import.meta.glob('./Vue/**/*.vue', { eager: true })

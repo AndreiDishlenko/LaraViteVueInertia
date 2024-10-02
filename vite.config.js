@@ -13,9 +13,7 @@ export default defineConfig({
     plugins: [
         laravel({
             input: [
-                // 'resources/css/global.css', 
-                // // 'resources/scss/styles.scss', 
-                // 'resources/js/main.js', 
+                'resources/css/global.css', 
                 'resources/js/app.js' 
             ],
             ssr: 'resources/js/ssr.js',
@@ -45,6 +43,7 @@ export default defineConfig({
         // cssMinify: true,
     // },
     // server: {
+    //     hmr: true,
     //     watch: {
     //         // Настройки отслеживания файлов
     //         usePolling: true, // Для стабильного отслеживания изменений (особенно в виртуальных машинах или сетевых дисках)

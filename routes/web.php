@@ -19,10 +19,10 @@ Route::get('/inertia', function () {
     return InertiaController::show();
 });
 
-Route::get('/rozsuvni-vorota', function () {
-    return MainController::index('Articles/vorota');
-});
+// Route::get('/rozsuvni-vorota', function () {
+//     return MainController::index('Articles/vorota');
+// });
 
-Route::get('/', function ( $locale="ua", $link="", $action="") {
-	return MainController::index();
-});
+// Route::get('/', function ( $locale="ua", $link="", $action="") {
+// 	return MainController::index();
+// });
