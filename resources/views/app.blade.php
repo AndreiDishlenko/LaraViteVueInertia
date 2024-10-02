@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<HTML lang="{{ $lang }}">
+<html>
+
 <head>
-	<meta charset="UTF-8">
+
+    <meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <title>{{ $title }}</title>
@@ -17,21 +19,13 @@
 	@if ( !empty($canonical) )
 		<link rel="canonical" href="{{ $canonical }}" />
 	@endif
-
-    @vite(['resources/css/styles.css'])
+    
+    @vite('resources/js/app.js')
     @inertiaHead
 </head>
 
-<body id="page" locale="{{ $locale }}">
-
+<body>
     @inertia
-
-    <div class="text-danger">Bootstrap</div>
-
-	<div id="app"></div> 
-
-    @vite(['resources/js/main.js'])
-
 </body>
 
-</HTML>
+</html>

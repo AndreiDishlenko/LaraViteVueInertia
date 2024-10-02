@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\InertiaController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MainController;
 
@@ -14,6 +15,9 @@ use App\Http\Controllers\MainController;
 |
 */
 
+Route::get('/inertia', function () {
+    return InertiaController::show();
+});
 
 Route::get('/rozsuvni-vorota', function () {
     return MainController::index('Articles/vorota');

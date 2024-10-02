@@ -2,8 +2,8 @@
     "private": true,
     "type": "module",
     "scripts": {
-        "dev": "vite",
-        "build": "vite build",
+        "dev": "vite && vite --ssr",
+        "build": "vite build && vite build --ssr",
         "clean": "vite --force"
     },
     "devDependencies": {
@@ -27,7 +27,9 @@
     "author": "",
     "license": "ISC",
     "dependencies": {
+        "@inertiajs/vue3": "^1.2.0",
         "@popperjs/core": "^2.11.8",
-        "@vitejs/plugin-vue": "^5.1.4"
+        "@vitejs/plugin-vue": "^5.1.4",
+        "@vue/server-renderer": "^3.5.10"
     }
 }
